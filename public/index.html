@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unpluggeders - Where Creativity Meets Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cursor animation/cursor.css">
+</head>
+
+<body class="light-mode custom-cursor">
+
+    <!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loading-container">
+        <div class="logo-animation">
+            <svg class="loading-logo-svg" width="150" height="150" viewBox="0 0 100 100">
+                <circle class="logo-circle" cx="50" cy="50" r="40" />
+                <path class="logo-path" d="M30,50 L45,65 L70,35" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <h1 class="loading-title">eBuzzzMedia</h1>
+        <div class="loading-bar">
+            <div class="loading-bar-progress"></div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero">EBuzzzMedia</a>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#consultation">Consultation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div id="particles-js" class="particles-container"></div>
+        <div class="gradient-background"></div>
+        <div class="hero-content">
+            <h1 class="reveal-text">EBuzzzMedia</h1>
+            <p class="reveal-text">Where Creativity Meets Technology</p>
+            <div class="cta-container">
+                <a href="#consultation" class="cta-button magnetic-button">Book a Free Consultation</a>
+            </div>
+        </div>
+        <div class="hero-background parallax-layer"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section scroll-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-description">Comprehensive solutions to boost your business</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Marketing</h3>
+                <ul>
+                    <li>Social Media Growth</li>
+                    <li>SEO Optimization</li>
+                    <li>Ad Campaigns</li>
+                    <li>Email Marketing</li>
+                </ul>
+                <a href="#consultation" class="service-link magnetic-button">Learn More</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Development</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Landing Pages</li>
+                    <li>AI-Powered Solutions</li>
+                    <li>App Development</li>
+                </ul>
+                <a href="#consultation" class="service-link magnetic-button">Learn More</a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3>Writing</h3>
+                <ul>
+                    <li>Blog Content</li>
+                    <li>Ad Copies</li>
+                    <li>LinkedIn Posts</li>
+                    <li>Marketing Copy</li>
+                </ul>
+                <a href="#consultation" class="service-link magnetic-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section scroll-section">
+        <div class="section-header">
+            <h2 class="section-title">Pre-Made Packages</h2>
+            <p class="section-description">Choose the package that fits your needs</p>
+        </div>
+        <div class="packages-container">
+            <div class="package-card" data-aos="fade-up">
+                <div class="package-header">
+                    <h3>Startup Growth Package</h3>
+                    <p class="package-price">$899</p>
+                </div>
+                <ul class="package-features">
+                    <li>Website Design & Development</li>
+                    <li>Basic SEO Setup</li>
+                    <li>Social Media Setup</li>
+                    <li>5 Blog Articles</li>
+                    <li>Email Newsletter Template</li>
+                </ul>
+                <a href="#consultation" class="cta-button magnetic-button">Get Started</a>
+            </div>
+            <div class="package-card featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="package-header">
+                    <h3>Business Booster Package</h3>
+                    <p class="package-price">$1,499</p>
+                </div>
+                <ul class="package-features">
+                    <li>Custom Website with Animations</li>
+                    <li>Advanced SEO Strategy</li>
+                    <li>Content Marketing Plan</li>
+                    <li>10 Blog Articles</li>
+                    <li>Social Media Management (1 month)</li>
+                    <li>Email Campaign Setup</li>
+                </ul>
+                <a href="#consultation" class="cta-button magnetic-button">Get Started</a>
+            </div>
+            <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="package-header">
+                    <h3>Premium Branding Package</h3>
+                    <p class="package-price">$2,499</p>
+                </div>
+                <ul class="package-features">
+                    <li>Premium Website with Advanced Animations</li>
+                    <li>Complete Brand Identity</li>
+                    <li>Comprehensive SEO Strategy</li>
+                    <li>Content Strategy & Calendar</li>
+                    <li>15 Blog Articles</li>
+                    <li>Social Media Management (3 months)</li>
+                    <li>Email Marketing Automation</li>
+                </ul>
+                <a href="#consultation" class="cta-button magnetic-button">Get Started</a>
+            </div>
+            <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="package-header">
+                    <h3>AI-Powered Marketing Package</h3>
+                    <p class="package-price">$1,999</p>
+                </div>
+                <ul class="package-features">
+                    <li>AI-Generated Content Strategy</li>
+                    <li>Automated Social Media Posts</li>
+                    <li>Smart Email Marketing Campaigns</li>
+                    <li>AI-Optimized Landing Pages</li>
+                    <li>Performance Analytics Dashboard</li>
+                    <li>Monthly Strategy Consultation</li>
+                </ul>
+                <a href="#consultation" class="cta-button magnetic-button">Get Started</a>
+            </div>
+            <div class="package-card custom" data-aos="fade-up" data-aos-delay="400">
+                <div class="package-header">
+                    <h3>Custom Growth Package</h3>
+                    <p class="package-price">Custom Pricing</p>
+                </div>
+                <p class="custom-description">Let's build a package tailored to your specific needs and goals.</p>
+                <a href="#custom-package" class="cta-button magnetic-button">Build Your Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Package Section -->
+    <section id="custom-package" class="custom-package-section scroll-section">
+        <div class="section-header">
+            <h2 class="section-title">Build Your Custom Package</h2>
+            <p class="section-description">Select the services you need</p>
+        </div>
+        <div class="custom-package-container">
+            <div class="custom-package-options">
+                <div class="option-category">
+                    <h3>Marketing</h3>
+                    <div class="option-items">
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="social-media">
+                            <span class="checkmark"></span>
+                            Social Media Growth
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="seo">
+                            <span class="checkmark"></span>
+                            SEO Optimization
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="ads">
+                            <span class="checkmark"></span>
+                            Ad Campaigns
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="email">
+                            <span class="checkmark"></span>
+                            Email Marketing
+                        </label>
+                    </div>
+                </div>
+                <div class="option-category">
+                    <h3>Development</h3>
+                    <div class="option-items">
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="web-dev">
+                            <span class="checkmark"></span>
+                            Web Development
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="landing">
+                            <span class="checkmark"></span>
+                            Landing Pages
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="ai-solutions">
+                            <span class="checkmark"></span>
+                            AI-Powered Solutions
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="app-dev">
+                            <span class="checkmark"></span>
+                            App Development
+                        </label>
+                    </div>
+                </div>
+                <div class="option-category">
+                    <h3>Writing</h3>
+                    <div class="option-items">
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="blog">
+                            <span class="checkmark"></span>
+                            Blog Content
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="ad-copy">
+                            <span class="checkmark"></span>
+                            Ad Copies
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="linkedin">
+                            <span class="checkmark"></span>
+                            LinkedIn Posts
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="service" value="marketing-copy">
+                            <span class="checkmark"></span>
+                            Marketing Copy
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-package-cta">
+                <a href="#consultation" class="cta-button magnetic-button">Let's Build Your Package</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="consultation-section scroll-section">
+        <div class="section-header">
+            <h2 class="section-title">Book a Free Consultation</h2>
+            <p class="section-description">Let's discuss how we can help your business grow</p>
+        </div>
+        <div class="consultation-container">
+            <form id="consultation-form" class="consultation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select a time</option>
+                        <option value="9:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell us about your project</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="cta-button magnetic-button">Book My Consultation</button>
+                </div>
+                <p class="form-notice">Email & WhatsApp reminders will be sent after booking.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-section">
+        <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">Have questions? We're here to help</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>hello@unpluggeders.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Creative Street, Digital City</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="contact-message" rows="4" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="cta-button magnetic-button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Unpluggeders</h3>
+                <p>Where Creativity Meets Technology</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#consultation">Consultation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Marketing</a></li>
+                        <li><a href="#services">Development</a></li>
+                        <li><a href="#services">Writing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Unpluggeders. All rights reserved.</p>
+        </div>
+        <button id="scroll-to-top" class="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p>Your form has been submitted successfully. We'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <!-- Theme transition overlay -->
+    <div class="theme-transition-overlay"></div>
+
+    <!-- Custom cursor elements -->
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
+
+    <!-- Animation libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Application scripts -->
+    <script src="loading-screen.js"></script>
+    <script src="api-client.js"></script>
+    <script src="script.js"></script>
+    <script src="./cursor animation/cursor.js"></script>
+    <script src="name-updater.js"></script>
+    <script src="simplified-form-handler.js"></script>
+</body>
+
+</html>
