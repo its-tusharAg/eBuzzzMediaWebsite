@@ -15,8 +15,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from the root directory
-app.use(express.static(path.join(__dirname, '../public/')));
+// UPDATED: Serve static files - first check the public directory, then root
+app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '..')));
 
 // Define MongoDB connection options
 const mongoOptions = {
@@ -221,9 +222,9 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Serve the main index.html file for all client-side routes
+// UPDATED: Serve the main index.html file from the root directory for all client-side routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
 // Error handling middleware
